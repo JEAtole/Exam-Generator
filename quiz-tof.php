@@ -137,7 +137,7 @@
 
             <div class="pos-rel">
                <h1 id="header" class="page-header"></h1>
-               <button class="quit fix-right"><a href="generating.php">QUIT</a></button>
+               <button class="quit fix-right"><a href="menu.php">QUIT</a></button>
             </div>
 
             <br/>

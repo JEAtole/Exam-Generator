@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
    <head>
       <!-- Set the character encoding to UTF-8 -->
       <meta charset="UTF-8">
@@ -106,7 +107,7 @@
          <section class="d-flex align-items-center justify-content-center row">
 
             <div class="text-center heading row">
-               <h1 class="page-header">Automated Exam Generator</h1>
+               <h1 class="page-header">Automated Quiz Generator</h1>
             </div>  
 
             <div class="row">
@@ -170,7 +171,7 @@
                <div class="form-group">
                   <label class="control-label col-md-2 col-md-offset-1">Title</label>
                   <div class="col-md-7">
-                     <input type="text" class="form-control" name="title" placeholder="Set exam title here">
+                     <input type="text" class="form-control" name="title" placeholder="Set exam title here" required>
                   </div>
                </div>
 
@@ -178,7 +179,7 @@
                   <label class=" control-label col-md-2 col-md-offset-1">Difficulty</label>
                   <div class="col-md-7">
                      <div class="radio">
-                        <label><input type="radio" name="difficulty" value="Easy">Easy&nbsp;&nbsp;</label>
+                        <label><input type="radio" name="difficulty" value="Easy" required>Easy&nbsp;&nbsp;</label>
                         <label><input type="radio" name="difficulty" value="Average">Average&nbsp;&nbsp;</label>
                         <label><input type="radio" name="difficulty" value="Difficult">Difficult</label>
                      </div>
@@ -190,7 +191,7 @@
                   <div class="col-md-7">
                      <div class="radio">
 
-                        <label><input type="radio" name="type" value="mcq">Multiple Choice&nbsp;&nbsp;</label>
+                        <label><input type="radio" name="type" value="mcq" required>Multiple Choice&nbsp;&nbsp;</label>
                         <label><input type="radio" name="type" value="owa">Identification&nbsp;&nbsp;</label>
                         <!-- <label><input type="radio" name="type" value="tof">True or False</label> -->
 
@@ -201,7 +202,7 @@
                <div class="form-group">
                   <label class=" control-label col-md-2 col-md-offset-1">Number of Items</label>
                   <div class="col-md-7">
-                     <input type="number" name="items" class="form-control" placeholder="1-10" min="1" max="10">
+                     <input type="number" name="items" class="form-control" placeholder="1-10" min="1" max="10" required>
                   </div>
                </div>
 
@@ -219,7 +220,7 @@
 
       <footer class="navbar navbar-default navbar-fixed-bottom">
          <div class="container">
-            <p class="text-center" style="padding: 10px;">© 2024 Automated Exam. All rights reserved.</p>
+            <p class="text-center" style="padding: 10px;">Automated Quiz Generator</p>
          </div>
       </footer>
 

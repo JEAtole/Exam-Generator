@@ -98,8 +98,8 @@
       <div class="container-fluid">  
          <section class="d-flex align-items-center justify-content-center">
             <div class="text-center">
-               <h1><strong>Generating Exam...</strong></h1>
-               <p>Please wait for a moment.</p>
+               <h1><strong>Generating Quiz...</strong></h1>
+               <p>Your quiz is currently being generated. Please wait until the buttons are activated before proceeding.</p>
 
                <br/>
 
@@ -128,7 +128,7 @@
                <br/><br/><br/>
 
                <div class='col-md-2 col-md-offset-5'>
-                  <button id="download" onclick="downloadFile('<?php echo $type; ?>', '<?php echo $title; ?>')">Download as PDF</button>
+                  <button id="download" class="btn btn-block" onclick="downloadFile('<?php echo $type; ?>', '<?php echo $title; ?>')">Download as PDF</button>
                </div>
                
             </div>
@@ -166,7 +166,7 @@
 
       <footer class="navbar navbar-default navbar-fixed-bottom">
          <div class="container">
-            <p class="text-center" style="padding: 10px;">© 2024 Automated Exam. All rights reserved.</p>
+            <p class="text-center" style="padding: 10px;">Automated Quiz Generator</p>
          </div>
       </footer>
 

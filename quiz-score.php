@@ -126,7 +126,7 @@
 
       <footer class="navbar navbar-default navbar-fixed-bottom">
          <div class="container">
-            <p class="text-center" style="padding: 10px;">© 2024 Automated Exam. All rights reserved.</p>
+            <p class="text-center" style="padding: 10px;">Automated Quiz Generator</p>
          </div>
       </footer>
 

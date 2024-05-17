@@ -138,7 +138,7 @@
 
             <div class="pos-rel">
                <h1 id="header" class="page-header"></h1>
-               <button class="quit fix-right"><a href="generating.php">QUIT</a></button>
+               <button class="quit fix-right"><a href="menu.php">QUIT</a></button>
             </div>
 
             <br/>
@@ -171,7 +171,7 @@
 
       <footer class="navbar navbar-default navbar-fixed-bottom">
          <div class="container">
-            <p class="text-center" style="padding: 10px;">© 2024 Automated Exam. All rights reserved.</p>
+            <p class="text-center" style="padding: 10px;">Automated Quiz Generator</p>
          </div>
       </footer>
 
