@@ -114,9 +114,9 @@
 
                ?>
 
-               <form action="generating.php">
+               <form action="menu.php">
                   <div class="col-md-2 col-md-offset-5">
-                     <button type="submit" class="btn-block">Retake</button>
+                     <button type="submit" class="btn-block">To Main Menu</button>
                   </div>
                </form>
 
