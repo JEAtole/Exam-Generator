@@ -1,0 +1,74 @@
+body {
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.navbar-brand a {
+    color: #FFFFFF !important;
+}
+ 
+section {
+    height: 80%;
+    width: 100%;
+    padding: 10px 50px 10px 50px;
+}
+
+button {
+    border-radius: 10px;
+    background: #000000;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+.sm-box {
+    height: fit-content;
+    padding: 10px;
+    background-color: #d3d3d3;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.flex-box {
+    padding: 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 25px;
+}
+
+.selected {
+    background: #A7C7E7;
+    border: 2px solid #00008B ;
+}
+
+.correct {
+    background: #C1E1C1;
+    border: 1px solid #023020;
+}
+
+.wrong {
+    background: #FAA0A0;
+    border: 1px solid #4A0404;
+}
+
+.quit, .quit a{
+    border-radius: 10px;
+    background: #FF0000;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.fix-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.white {
+    color: #FFFFFF;
+}

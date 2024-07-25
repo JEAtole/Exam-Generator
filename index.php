@@ -10,65 +10,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Set the title of the web page -->
       <title>Exam Gen</title>
-      <script type="module" src="api.js"></script>
-      <!-- Include the PDF.js library -->
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js" integrity="sha512-ml/QKfG3+Yes6TwOzQb7aCNtJF4PUyha6R3w8pSTo/VJSywl7ZreYvvtUso7fKevpsI+pYVVwnu82YO0q3V6eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="styles.css">
       <script src="js/jquery.js"></script>
       <script src="js/bootstrap.min.js"></script>
-
-      <style>
-
-         body {
-            padding-bottom: 100px;
-            padding-top: 100px;
-         }
-
-         section {
-            height: fit-content;
-            width: 100%;
-            padding: 50px;
-         }
-
-         .box {
-            min-height: 300px;
-            background: #000000;
-            border-radius: 25px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-            gap: 10px;
-         }
-         
-         button {
-            border-radius: 10px;
-            background: #000000;
-            color: #FFFFFF;
-            padding: 5px;
-         }
-
-         .navbar-brand a {
-            color: #FFFFFF !important;
-
-         }
-
-         .txt-black {
-            color: #000000;
-         }
-
-         .heading {
-            padding-bottom: 20px;
-         }
-
-         iframe {
-            border-style: none;
-            width: 100%;
-            max-height: 500px;
-         }
-
-      </style>
 
       <script>
          
@@ -88,11 +34,11 @@
          <div class="container">
 
             <div class="navbar-header">
-               <div class="navbar-brand"><a href="index.php">NEUPaperTrail</a></div>
+               <div class="navbar-brand"><a href="#">NEUPaperTrail</a></div>
             </div>
 
             <ul class="nav navbar-nav navbar-right">
-               <li class="active"><a href="index.php">HOME</a></li>
+               <li class="active"><a href="#">HOME</a></li>
 
             </ul>
 
@@ -166,7 +112,7 @@
             
             <br/>
 
-            <form class="form-horizontal" action="generating.php" method="POST">
+            <form class="form-horizontal" action="generating/" method="POST">
 
                <div class="form-group">
                   <label class="control-label col-md-2 col-md-offset-1">Title</label>
@@ -193,7 +139,7 @@
 
                         <label><input type="radio" name="type" value="mcq" required>Multiple Choice&nbsp;&nbsp;</label>
                         <label><input type="radio" name="type" value="owa">Identification&nbsp;&nbsp;</label>
-                        <!-- <label><input type="radio" name="type" value="tof">True or False</label> -->
+                        <label><input type="radio" name="type" value="tof">True or False</label>
 
                      </div>
                   </div>
@@ -208,7 +154,7 @@
 
                <div class="form-group">
                   <div class="col-md-2 col-md-offset-5">
-                     <button id="generateButton" class="btn btn-block generate" disabled >Generate</button>
+                     <button id="generateButton" type="submit" class="btn btn-block generate" disabled >Generate</button>
                   </div>
                </div>
                
@@ -250,7 +196,5 @@
       document.getElementById("fileUploadForm").addEventListener("submit", function() {
             setTimeout(checkUploads, 1000); // Delay to allow time for file upload to complete
       });
-
-
    </script>
 </html>

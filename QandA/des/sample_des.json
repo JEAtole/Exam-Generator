@@ -1,45 +1,12 @@
-{
-    "qna": [
-      {
-        "question": "What is the brain of the computer?",
-        "answer": "CPU"
-      },
-      {
-        "question": "What type of memory provides temporary storage for data?",
-        "answer": "RAM"
-      },
-      {
-        "question": "What type of devices allow users to interact with computers?",
-        "answer": "Input"
-      },
-      {
-        "question": "What type of devices display information or produce tangible results?",
-        "answer": "Output"
-      },
-      {
-        "question": "How many digits does binary code use?",
-        "answer": "Two"
-      },
-      {
-        "question": "What type of devices are hard disk drives and solid-state drives?",
-        "answer": "Storage"
-      },
-      {
-        "question": "What system does computers operate using?",
-        "answer": "Binary"
-      },
-      {
-        "question": "What type of computers are tailored to specific needs and applications?",
-        "answer": "Personal"
-      },
-      {
-        "question": "What has the internet transformed?",
-        "answer": "Communication"
-      },
-      {
-        "question": "What role are computers expected to play in the future?",
-        "answer": "Significant"
-      }
-    ]
-  }
-  
+{"qna": [
+    {"question": "What is the primary responsibility for creating acceptance criteria?", "answer": "Product"},
+    {"question": "Who typically facilitates the discussion for defining the Definition of Done (DoD)?", "answer": "Scrum"},
+    {"question": "What does the Definition of Done (DoD) establish within a Scrum team?", "answer": "Completion"},
+    {"question": "Who provides insights on the overall quality level expected for deliverables in the DoD?", "answer": "Owner"},
+    {"question": "When should the DoD be reviewed or potentially refined?", "answer": "Sprint"},
+    {"question": "What do acceptance criteria focus on within user stories?", "answer": "Functionalities"},
+    {"question": "Who plays a crucial role in defining the technical aspects of the DoD?", "answer": "Team"},
+    {"question": "What benefits does a well-defined DoD offer for Scrum teams?", "answer": "Transparency"},
+    {"question": "What is the main focus of the Acceptance Criteria in Scrum?", "answer": "User"},
+    {"question": "Who ensures all perspectives are considered in defining a realistic DoD?", "answer": "Master"}
+]}
