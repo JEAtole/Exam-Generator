@@ -5,9 +5,11 @@
         $type = $_POST['type'];
 
         if($type == "mcq"){
-            $filePath = "../QandA/mcq/sample_mcq.json";
+            $filePath = "mcq/mcq-qna.json";
         } else if ($type == "owa"){
-            $filePath = "../QandA/des/sample_des.json";
+            $filePath = "owa/owa-qna.json";
+        } else if ($type == "tof") {
+            $filePath = "tof/tof-qna.json";
         }
 
         file_put_contents($filePath, $content);

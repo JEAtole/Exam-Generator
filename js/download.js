@@ -26,8 +26,6 @@ async function downloadFile(type, title) { // function pang handle ng document n
     }
 }
 
- // below is yung code na responsible kung bakit hindi na jpeg at manananggal yung text
-
 function addText(doc, text, margins) {
     let lineHeight = doc.getLineHeight(); // kunin yung height nung kabuuang text/content
     let lines = doc.splitTextToSize(text, margins.width); // hatiin yung text pag di na kasya sa isang page
@@ -57,7 +55,7 @@ pdfContentHandler = async (type, title) => {
 }
 
 mcqFormat = async (title) => {
-    const file = '../QandA/mcq/sample_mcq.json';
+    const file = '../quiz/mcq/mcq-qna.json';
     let indexCounter = 1;
     let output = ``;
 
@@ -94,7 +92,31 @@ mcqFormat = async (title) => {
 }
 
 owaFormat = async (title) => {
-    const file = '../QandA/des/sample_des.json';
+    const file = '../quiz/owa/owa-qna.json';
+    let indexCounter = 1;
+    let output = ``;
+    
+    try {
+        let response = await fetch(file);
+        let data = await response.json();
+
+        data.qna.forEach(element => {
+                let q = element.question;
+                let answer = element.answer;
+                output += `${indexCounter}. ${q}\n`;
+                output += `Answer: ${answer}\n\n`;
+                indexCounter++;
+        });
+
+    } catch (error) {
+       console.error("error", error);
+    }
+
+    return output;
+}
+
+tofFormat = async (title) => {
+    const file = '../quiz/tof/tof-qna.json';
     let indexCounter = 1;
     let output = ``;
     

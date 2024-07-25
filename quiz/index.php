@@ -105,13 +105,13 @@
                <?php
                   switch($type) {
                      case "mcq":
-                        $next_page = "../quiz/mcq/";
+                        $next_page = "mcq/";
                         break;
                      case "tof":
-                        $next_page = "../quiz/tof/";
+                        $next_page = "tof/";
                         break;
                      case "owa":
-                        $next_page = "../quiz/owa/";
+                        $next_page = "owa/";
                         break;
                   }
 

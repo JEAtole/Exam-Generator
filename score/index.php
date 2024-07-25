@@ -85,28 +85,14 @@
 
                   ";
 
-                  $type = $customInfo['type'];
-
-                  switch($type) {
-                     case "mcq":
-                         $next_page = "../quiz/mcq/";
-                         break;
-                     case "tof":
-                         $next_page = "../quiz/tof/";
-                         break;
-                     case "owa":
-                         $next_page = "../quiz/owa/";
-                         break;
-                 }
-
-                 echo "<form action='$next_page'>
-                         <div class='col-md-2 col-md-offset-5'>
-                             <button id='quiz' type='submit' class='btn btn-block'>Retake</button>
-                         </div>
-                         </form>"
-
 
                ?>
+
+               <form action='../menu/'>
+                  <div class='col-md-2 col-md-offset-5'>
+                     <button id='quiz' type='submit' class='btn btn-block'>Menu</button>
+                  </div>
+               </form>
 
             </div>
          </section>

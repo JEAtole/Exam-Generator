@@ -3,7 +3,7 @@ let questionNumber = 1;
 let questionIndex = 0;
 let score = 0;
 let noOfQuestions;
-const file = '../../QandA/des/sample_des.json';
+const file = 'owa-qna.json';
 const header = document.getElementById("header")
 const qElement = document.getElementById("question");
 const aElement = document.getElementById("answerContainer");

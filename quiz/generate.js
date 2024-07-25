@@ -60,6 +60,9 @@ promptHandler = (difficulty, type, noOfQuestions, content) => {
     } else if (type == "owa") {
         prompt += `Generate ${noOfQuestions} ${difficulty} questions based on the following text. Each question should have ONLY ONE answer, which must be ONE WORD ONLY and cannot contain 'and' or 'or'.  Format: {"qna": [{"question": "<insert question>", "answer": "<insert answer>"},     {"question": "<insert question>", "answer": "<insert answer>"}, ... ]}`;
         prompt += content;
+    } else if (type == "tof") {
+        prompt += `Generate ${noOfQuestions} ${difficulty} true or false questions based on the following text. Format: {"qna": [{"question": "<insert question>", "answer": "<insert answer>"},     {"question": "<insert question>", "answer": "<insert answer>"}, ... ]}`;
+        prompt += content;
     }
     sendPrompt(prompt);
 }

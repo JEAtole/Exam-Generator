@@ -19,8 +19,10 @@
       <script>
          
          var xhr = new XMLHttpRequest();
-         xhr.open('GET', 'cleanup.php', true); // Synchronous request
-         xhr.send();
+         var command = 'command=cleanup';
+         xhr.open('POST', 'control.php', true); // Synchronous request
+         xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+         xhr.send(command);
          
       </script>
 
@@ -62,7 +64,7 @@
 
                <br/>
 
-               <form id="fileUploadForm" action="upload.php" method="POST" enctype="multipart/form-data" target="showUploads">
+               <form id="fileUploadForm" action="control.php" method="POST" enctype="multipart/form-data" target="showUploads">
 
                   <div class="col-md-5 col-md-offset-3">
                      <input class="form-control" type="file" name="files[]" accept=".pdf" multiple>
@@ -112,7 +114,7 @@
             
             <br/>
 
-            <form class="form-horizontal" action="generating/" method="POST">
+            <form class="form-horizontal" action="quiz/" method="POST">
 
                <div class="form-group">
                   <label class="control-label col-md-2 col-md-offset-1">Title</label>
@@ -172,29 +174,5 @@
 
    </body>
 
-   <script>
-      const uploadButton = document.getElementById("fileUploadButton");
-      const generateButton = document.getElementById("generateButton");
-
-      function checkUploads() {
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "check_uploads.php", true);
-            xhr.onreadystatechange = function() {
-               if (xhr.readyState === XMLHttpRequest.DONE) {
-                  if (xhr.status === 200) {
-                     // Directory is not empty, enable the generateButton
-                     generateButton.disabled = false;
-                  } else {
-                     // Directory is empty, disable the generateButton
-                     generateButton.disabled = true;
-                  }
-               }
-            };
-            xhr.send();
-        }
-
-      document.getElementById("fileUploadForm").addEventListener("submit", function() {
-            setTimeout(checkUploads, 1000); // Delay to allow time for file upload to complete
-      });
-   </script>
+   <script src="script.js"></script>
 </html>

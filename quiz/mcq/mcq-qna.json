@@ -1,0 +1,28 @@
+{
+  "qna": [
+    {
+      "question": "What is the primary function of the central processing unit (CPU) in a computer?",
+      "A": "Provide temporary storage for data",
+      "B": "Execute instructions and coordinate hardware activities",
+      "C": "Display information on a monitor",
+      "D": "Allow users to enter data",
+      "answer": "B"
+    },
+    {
+      "question": "Which type of memory provides temporary storage for data that the CPU needs to access quickly?",
+      "A": "Hard disk drives (HDDs)",
+      "B": "Solid-state drives (SSDs)",
+      "C": "Random Access Memory (RAM)",
+      "D": "External storage devices",
+      "answer": "C"
+    },
+    {
+      "question": "What system do computers operate using, which represents data and instructions using only two digits?",
+      "A": "Hexadecimal code",
+      "B": "Decimal code",
+      "C": "Binary code",
+      "D": "Octal code",
+      "answer": "C"
+    }
+  ]
+}

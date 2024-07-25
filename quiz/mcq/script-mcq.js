@@ -3,7 +3,7 @@ let questionNumber = 1;
 let questionIndex = 0;
 let score = 0;
 let noOfQuestions;
-const file = '../../QandA/mcq/sample_mcq.json';
+const file = 'mcq-qna.json';
 const header = document.getElementById("header")
 const qElement = document.getElementById("question");
 const aElement = document.getElementById("A");
