@@ -1,38 +1,46 @@
 # Exam-Generator
 
-!! You have to make an uploads folder. It is not included here because GitHub does not allow saving empty folders. Name it 'uploads'!!
+The Automated Exam Generator is a tool designed to simplify the process of creating exams. By accepting PDF files as input, this application generates exams based on user preferences. The types of questions generated include multiple choice, one-word answer questions, and true/false questions. The system leverages OpenAI to generate the questions, ensuring high-quality and relevant exam content.
 
-### index.php
-- home page
-- accepts files and customization input. DONE!
-- Refreshing or simply loading on this page will clear uploaded files. DONE!
+## Features
+- PDF Input: Upload a PDF file to serve as the source material for the exam questions.
+- Question Types: Generate multiple choice, one-word answer, and true/false questions.
+- Customization: Set preferences for the difficulty and number of questions to be generated.
+- OpenAI Integration: Utilizes OpenAI's advanced language model to create relevant and accurate exam questions.
+- Exam Taking: Users can take the generated exams directly within the web app.
 
-<hr/>
+## Technologies Used
+HTML, CSS, JavaScript, PHP, and Bootstrap
 
-### generating.php
-- loading page as the user waits for the exam to be generated
-- display customization input DONE!
-- disable muna button tas activate pag okay naka generate na ng questions
-- add button for downloading question and answer in a file (to do, di ko pa alam pano)
+## Installation
+To use this web app locally, follow these steps:
 
-<hr/>
+1. **Clone the repository:**
+   ```
+   git clone https://github.com/JEAtole/Exam-Generator.git
+   ```
+2. **Navigate to the project directory:**
+   ```
+   cd Exam-Generator
+   ```
+3. **Configuration:** Ensure you have an OpenAI API key and set it in `generating/generate.js line:07`. 
+   
+4. **Set up a local server:** You will need to install a local server environment such as XAMPP or Laragon.
+   - **XAMPP:** [Download XAMPP](https://www.apachefriends.org/index.html) and install it.
+   - **Laragon:** [Download Laragon](https://laragon.org/) and install it.
 
-## Quiz Interfaces
+5. **Move the project to the server's root directory:**
+   - For XAMPP, move the project folder to `C:\xampp\htdocs`.
+   - For Laragon, move the project folder to `C:\laragon\www`.
 
-## quiz-mc.php
-- quiz page for multiple choice type question
+6. **Start the local server:**
+   - Open the XAMPP or Laragon control panel and start the Apache server.
 
-## quiz-tof.php
-- quiz page for true or false type question
+7. **Access the web app:**
+   - Open your web browser and go to `http://localhost/Exam-Generator`.
 
-## quiz-owa.php
-- quiz page for short answer. These are questions with one-word answers. This is not case-sensitive.
-
-<hr/>
-
-## quiz-score.php
-- page for displaying quiz result
-- add button to retake quiz
-- add button to download question and answers in a file.
-
-
+## Usage
+1. Run the application by accessing it through the local server.
+2. Upload a PDF file when prompted.
+3. Select your preferences for the type, difficulty and number of questions.
+4. Generate the exam and start taking it within the web app.
